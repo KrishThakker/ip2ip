@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 overflow-hidden pt-16 md:pt-0">
         {/* Dots Pattern */}
         <div className="absolute inset-0 bg-[url('/dots.svg')] bg-[length:20px_20px] opacity-100" />
         
@@ -21,39 +21,39 @@ export default function Home() {
         
         {/* Floating Elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl animate-pulse delay-1000" />
+          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl animate-pulse hidden md:block" />
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl animate-pulse delay-1000 hidden md:block" />
         </div>
 
-        <div className="container mx-auto px-6 relative z-10 text-white">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 text-white pt-12 md:pt-24">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Transforming Networks,{' '}
-              <span className="bg-gradient-to-r from-blue-200 to-blue-100 text-transparent bg-clip-text">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 md:mb-6 leading-tight">
+              <span className="block mb-2 md:mb-0 md:inline">Transforming Networks,</span>{' '}
+              <span className="bg-gradient-to-r from-blue-200 to-blue-100 text-transparent bg-clip-text block md:inline">
                 Empowering Business
               </span>
             </h1>
-            <p className="text-xl md:text-2xl mb-12 text-blue-50 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl mb-8 md:mb-12 text-blue-50 max-w-2xl mx-auto leading-relaxed px-4 sm:px-0">
               Bespoke network and security solutions, talent acquisition, and AI integration for your business
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 md:mb-16 px-4 sm:px-0">
               <a 
                 href="mailto:info@ip2ipnetworks.com"
-                className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg"
+                className="bg-white text-blue-900 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg w-full sm:w-auto text-center"
               >
                 Send Email
               </a>
               <Link 
                 href="/services"
-                className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-all"
+                className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-white/10 transition-all w-full sm:w-auto text-center"
               >
                 Explore Services
               </Link>
             </div>
 
             {/* Technology Partners */}
-            <div className="mt-16">
-              <p className="text-sm text-blue-100 mb-8 opacity-80">
+            <div className="hidden md:block mt-12 md:mt-16">
+              <p className="text-xs sm:text-sm text-blue-100 mb-6 sm:mb-8 opacity-80">
                 Expertise in industry-leading technologies
               </p>
               <div className="relative overflow-hidden w-full">
