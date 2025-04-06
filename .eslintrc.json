@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "warn",
+    "react/no-unescaped-entities": "warn",
+    "no-console": "warn",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/explicit-module-boundary-types": "warn",
+    "@typescript-eslint/no-non-null-assertion": "warn",
+    "react/display-name": "warn",
+    "react/prop-types": "warn",
+    "@typescript-eslint/ban-ts-comment": "warn",
+    "@typescript-eslint/no-empty-function": "warn",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-unused-vars": "warn",
+    "import/no-unused-modules": "warn"
+  },
+  "ignorePatterns": ["node_modules/", ".next/", "out/", "build/"]
+} 
